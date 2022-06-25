@@ -1,17 +1,18 @@
-function kUniwQueChar(arr, unqCharLength) {
+function kUniwQueChar(arr, k) {
     let start = 0;
     let pointer = 0;
     let unqCounter = {}
     let CounterSize = Object.keys(unqCounter).length;
-    let max = -Infinity;
+    let max = -1;
     while (start < arr.length) {
         //if map size is more than uniqchar length --//?we perform add operation to that map
-        if (CounterSize < unqCharLength) {
-            unqCounter[arr[pointer]] = (unqCounter[arr[pointer]] || 0) + 1
+        unqCounter[arr[pointer]] = (unqCounter[arr[pointer]] || 0) + 1
+        if (CounterSize < k) {
+            
             pointer++;
         }
         //this is our main portion
-        else if (CounterSize == unqCharLength) {
+        else if (CounterSize == k) {
             //we have got right substr , so now we need to store it's length to max
             
             let Wsize = pointer - start + 1
@@ -20,9 +21,9 @@ function kUniwQueChar(arr, unqCharLength) {
             }
             pointer++
         }
-        else if (CounterSize > unqCharLength) {
+        else if (CounterSize > k) {
             
-            while(CounterSize > unqCharLength){
+            while(CounterSize > k){
                 unqCounter[arr[start]] = - 1
                 if(unqCounter[arr[start]]==0){
                     delete unqCounter[arr[start]]

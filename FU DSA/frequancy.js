@@ -24,6 +24,7 @@ for (let i in a){
 for(let i in b){
    obj2[b[i]] +=1
 }
+
 for(key in obj1){
     obj2[key*key] == obj1[key]
 }
