@@ -52,6 +52,6 @@ console.log(num) //it will print 1-10
 //bcz we call first and print after
 }
 
-console.log(printcounters(10))
+//console.log(printcounters(10))
 
 

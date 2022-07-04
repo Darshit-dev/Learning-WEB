@@ -4,7 +4,7 @@ function reverse(str) {
   return reverse(str.slice(1)) + str[0];
 }
 
-//console.log(reverse("darshit"))
+console.log(reverse("darshit"))
 
 //!wether the sring is palidrom or not
 //?palindrome : words (number or string) that read the same backwards as well
@@ -34,6 +34,7 @@ function isPlr2(str) {
 
 //TODO : by shadab sir
 //we will convert string into array
+
 
 
 

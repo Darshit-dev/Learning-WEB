@@ -19,7 +19,7 @@ let obj = new Set(myArray);
 
 //data stored into key value pair
 // value can be intred by for or loop or by  foreach loop
-
+/*
 let myMap = new Map([["a2","ajay"],["a1","vikas"]]);
 myMap.set("a3","ajaya") // to set key value pair
 //console.log(myMap.get("a1")); // to find value of that perticuler key
@@ -33,4 +33,17 @@ for(let [key,value] of myMap){
 myMap.forEach((key,value)=>{
     console.log(key,value)
 })
+*/
+
+let mymap = new Map()
+console.log(mymap);
+mymap.set('name','Darshit')
+mymap.set('city','surat')
+
+
+console.log(mymap);
+
+for(let [key] of mymap){
+    console.log(key)
+}
 
