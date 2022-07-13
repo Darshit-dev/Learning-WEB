@@ -12,7 +12,7 @@ function bubble(arr){
 return arr
 }
 
-//console.log(bubble([37,45,29,8]))
+console.log(bubble([37,45,29,8]))
 
 function bubbleSortNum(arr){
     for(let i = arr.length; i > 0; i--){
@@ -24,4 +24,9 @@ function bubbleSortNum(arr){
     }
     return arr
   }
-//console.log(bubbleSortNum([37,45,29,8]));
+console.log(bubbleSortNum([37,45,29,8]));
+
+function name(...args) {
+  console.log(args);
+}
+name(1,2,3)
