@@ -11,6 +11,8 @@ class Car extends Vehicle{
         console.log("you drive the car");
     }
 }
+    
+
 
 let car = new Car();
 console.log(car.drive()); 
